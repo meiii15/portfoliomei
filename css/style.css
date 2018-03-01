@@ -118,7 +118,7 @@ body {
   font-weight: bold;
 }
 
-/*TESTE MENU*/
+/* MENU */
 
 .sidenav {
     height: 99%;
@@ -180,27 +180,7 @@ body {
   color: #171717;
 }
 
-
-/*.circulo{
-    width:130px;
-    height:130px;
-    border-radius:50%;
-    border:3px solid #000;
-    z-index:5;
-    background:#000;
-    position:relative;
-    }
-    .img{
-      z-index:1;
-      width:130px;
-      height:130px;
-      background-position:center;
-      opacity:0.5;
-    }
-*/
-
-
-
+/* CIRCULO FOTO PERFIL */
 .img-circle {
 border-radius: 50%;
 box-shadow: 0px 0px 30px 3px #000000;
@@ -225,23 +205,10 @@ width: 15%;
   color: #000;
 }
 
-
-
-/*body {
-  background-color:#ce3635;
-  text-align: center;
-  color:#fff;
-  padding-top:10em;
-}
-
-* { color:#fff; text-decoration: none;}
-*/
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-/*FIM TESTE MENU*/
 
 /*
  * Footer
