@@ -1,0 +1,22 @@
+{
+  "name": "portfoliomei",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meiii15/portfoliomei.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meiii15/portfoliomei/issues"
+  },
+  "homepage": "https://github.com/meiii15/portfoliomei#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
