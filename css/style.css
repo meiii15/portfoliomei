@@ -205,6 +205,23 @@ width: 15%;
   color: #000;
 }
 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 27px;
+   background-color: #02020287;
+   color: white;
+   text-align: center;
+   font-size: 13px;
+}
+
+.like-style{
+    width:  15px;
+}
+
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
