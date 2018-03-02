@@ -1,187 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
-    <title>Portfólio</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Portfólio</title>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="node_modules/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="node_modules/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="node_modules/bootstrap/assets/js/ie-emulation-modes-warning.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="node_modules/bootstrap/assets/js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
 
-  <body>
+  <script src="js/nav-bar.js"></script>
+  <script src="js/text-type.js"></script>
+  <script src="js/index.js"></script>
+</head>
 
-    <!-- MENU -->
+<body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Portfólio</a>
-  <a href="#">Habilidades</a>
-  <a href="#">Fale comigo</a>
-  <a href="#">Currículo</a>
+  <!-- MENU -->
 
-<!-- LOGO-ICONES -->
-<div class="button-logo">
-<a href="default.asp">
-  <img src="imgs/linkedin-logo.png">
-  <img src="imgs/whatsapp.png">
-  <img src="imgs/github-logo.png">
-  <img src="imgs/facebook-logo-button.png">
-</a>
-</div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="sideNavBar.closeNav()">&times;</a>
+    <a href="#">Portfólio</a>
+    <a href="#">Habilidades</a>
+    <a href="#">Fale comigo</a>
+    <a href="#">Currículo</a>
 
-</div>
+    <!-- LOGO-ICONES -->
+    <div class="button-logo">
+      <a href="default.asp">
+        <img src="imgs/linkedin-logo.png">
+        <img src="imgs/whatsapp.png">
+        <img src="imgs/github-logo.png">
+        <img src="imgs/facebook-logo-button.png">
+      </a>
+    </div>
 
-  <span class="menu-hamburguer" onclick="openNav()">&#9776;</span>
-</div>
+  </div>
+  <span class="menu-hamburguer" onclick="sideNavBar.openNav()">&#9776;</span>
+  </div>
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+  <div>
+    <img class="img-circle" src="imgs/photo725687003457365931.jpg">
+  </div>
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
-}
-</script>
+  <div>
+    <h1 class="font-style">Mei N.S.</h1>
+  </div>
 
-<div>
-<img class="img-circle" src="imgs/photo725687003457365931.jpg">
-</div>
+  <!-- LEMBRAR DE APAGAR <BR> E ADIONAR A QUEBRA DE LINHA NO CSS -->
 
-<div>
-<h1 class="font-style">Mei N.S.</h1>
-</div>
+  <span class="description-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <br> Mauris et nunc a ipsum convallis tincidunt vitae quis nisl.
+    <br> Duis nec consequat erat, quis sodales dolor. Aenean porttitor nec
+    <br> sapien a blandit. Phasellus porta, ligula ac tempus laoreet, nisl felis placerat nisl,
+    <br> vitae ornare ipsum libero eu massa. Cras luctus id odio ut consequat.</span>
 
-<!-- LEMBRAR DE APAGAR <BR> E ADIONAR A QUEBRA DE LINHA NO CSS -->
+  <!-- MAQUINA DE ESCREVER TEXTO -->
+  <div>
+    <h1 class="typewrite-style">O que eu
+      <a href="" class="typewrite" data-period="2000" data-type='[ "desenvolvo: ", "crio:", "faço:", "I Love to Develop." ]'>
+        <span class="wrap"></span>
+      </a>
+    </h1>
+  </div>
 
-<span class="description-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
-Mauris et nunc a ipsum convallis tincidunt vitae quis nisl. <br>
-Duis nec consequat erat, quis sodales dolor. Aenean porttitor nec<br> 
-sapien a blandit. Phasellus porta, ligula ac tempus laoreet, nisl felis placerat nisl,<br> 
-vitae ornare ipsum libero eu massa. Cras luctus id odio ut consequat.</span>
+  <div>
+    <img src="imgs/code.png">
+    <span>Front-End</span>
+    <img src="imgs/responsive-design-symbol.png">
+    <span>Responsivo</span>
+    <img src="imgs/website-design-symbol.png">
+    <span>Layout</span>
+  </div>
 
-<!-- MAQUINA DE ESCREVER TEXTO -->
-<div>
-	
-<h1 class="typewrite-style">O que eu 
-  <a href="" class="typewrite" data-period="2000" data-type='[ "desenvolvo: ", "crio:", "faço:", "I Love to Develop." ]'>
-    <span class="wrap"></span>
-  </a>
-</h1>
+  <!-- FOOTER -->
 
+  <div class="footer">
+    <p>Copyright © 2018. Feito com
+      <img class="like-style" src="imgs/like.png"> por Mei N.S.</p>
+  </div>
 
-
-</div>
-
-<script>
-	
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-</script>
-
-<div>
-	<img src="imgs/code.png">
-<span>Front-End</span>
-<img src="imgs/responsive-design-symbol.png">
-<span>Responsivo</span>
-<img src="imgs/website-design-symbol.png">
-<span>Layout</span>
-</div>
-
-<!-- FOOTER -->
-
-<div class="footer">
-  <p>Copyright © 2018. Feito com <img class="like-style" src="imgs/like.png"> por Mei N.S.</p>
-</div>
-
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="node_modules/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="node_modules/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="node_modules/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="node_modules/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
 </html>
