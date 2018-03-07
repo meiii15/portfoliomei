@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: #00000080 url(../imgs/background2.jpg);
+  background: #0F0F0F;
   background-size: cover;
   
 }
@@ -124,68 +124,18 @@ body {
 
 /* MENU */
 
-.sidenav {
-    height: 99%;
-    width: 13%;
-    /*width: 0;*/
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #341110d9;;
-    /*overflow-x: hidden;*/
-    /*transition: 0.5s;*/
-    /*padding-top: 14%;
-    padding-right: 1%;*/
-    box-shadow: 7px 10px 10px #000000a8;
-    /*border-top: 1px solid #6e6d6d94;
-    border-right: 1px solid #6e6d6d94;*/
-}
-
-.align-txt-menu{
-  padding-top: 100%;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 20px;
-    text-decoration: underline;
-    font-size: 18px;
-    color: #e2e2e2c9;
-    display: block;
-    transition: 0.3s;
-}
-
-/*.sidenav a:hover {
-    color: #000;
-}*/
-
-/*.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    text-decoration: none;
-}*/
 
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
 
-.button-logo{
-  display: flex;
-  position: fixed;
-}
-
-.menu-hamburguer{
-  font-size:30px;
-  cursor:pointer;
-  display: flex;
-  position: fixed;
-  padding-left: 1%;
-  padding-top: 1%;
-  color: #171717;
+.logo-splash{
+  border: 1px solid #e9e9e9;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  height: 25%;
+  width: 25%;
 }
 
 /* CIRCULO FOTO PERFIL */
@@ -219,7 +169,7 @@ width: 15%;
    bottom: 0;
    width: 100%;
    height: 3%;
-   background-color: #a63839;
+   background-color: #0f0f0f;
    color: white;
    text-align: end;
    font-size: 13px;
