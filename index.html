@@ -20,6 +20,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
 
   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -31,95 +32,53 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+  <script src="node_modules/angular/angular.js" type="text/javascript"></script>
+
   <script src="js/nav-bar.js"></script>
-  <script src="js/text-type.js"></script>
-  <script src="js/index.js"></script>
+  <!-- <script src="js/text-type.js"></script> -->
+
+  <script src="js/index.js" type="text/javascript"></script>
+  <script src="js/directives/home-directive.js" type="text/javascript"></script>
+  <script src="js/directives/auto-type.js" type="text/javascript"></script>
+  <script src="js/directives/abilities-directive.js" type="text/javascript"></script>
+  
 </head>
 
-<body>
+<body ng-app="portfolio">
 
   <!-- MENU -->
-
   <div id="mySidenav" class="sidenav">
     <!-- <a href="javascript:void(0)" class="closebtn" onclick="sideNavBar.closeNav()">&times;</a> -->
     <div class="align-txt-menu">
-    <a href="#">Home</a>
-    <a href="#">Portfólio</a>
-    <a href="#">Habilidades</a>
-    <a href="#">Fale comigo</a>
-    <a href="#">Currículo</a>
-</div>
-    
+      <a href="#">Home</a>
+      <a href="#">Portfólio</a>
+      <a href="#">Habilidades</a>
+      <a href="#">Fale comigo</a>
+      <a href="#">Currículo</a>
+    </div>
+
     <!-- LOGO-ICONES -->
     <div class="button-logo">
       <a href="#">
-        <img src="imgs/linkedin-logo-white.png"> 
+        <img src="imgs/linkedin-logo-white.png">
       </a>
-         <a href="#">
+      <a href="#">
         <img src="imgs/whatsapp-white.png">
-         </a>
-         <a href="#">
-        <img src="imgs/github-logo-white.png">
-         </a>
-         <a href="#">
-        <img src="imgs/facebook-logo-button-white.png">
-     </a>
-    </div>
-
-  </div>
- <!--  <span class="menu-hamburguer" onclick="sideNavBar.openNav()">&#9776;</span> -->
-  </div>
-
-  <div>
-    <img class="img-circle" src="imgs/photo725687003457365931.jpg">
-  </div>
-
-  <div>
-    <h1 class="font-style">Mei N.S.</h1>
-  </div>
-
-  <!-- LEMBRAR DE APAGAR <BR> E ADIONAR A QUEBRA DE LINHA NO CSS -->
-
-  <span class="description-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    <br> Mauris et nunc a ipsum convallis tincidunt vitae quis nisl.
-    <br> Duis nec consequat erat, quis sodales dolor. Aenean porttitor nec
-    <br> sapien a blandit. Phasellus porta, ligula ac tempus laoreet, nisl felis placerat nisl,
-    <br> vitae ornare ipsum libero eu massa. Cras luctus id odio ut consequat.</span>
-
-  <!-- MAQUINA DE ESCREVER TEXTO -->
-  <div>
-    <h1 class="typewrite-style">O que eu
-      <a href="" class="typewrite" data-period="2000" data-type='[ "desenvolvo: ", "crio:", "faço:", "I Love to Develop." ]'>
-        <span class="wrap"></span>
       </a>
-    </h1>
+      <a href="#">
+        <img src="imgs/github-logo-white.png">
+      </a>
+      <a href="#">
+        <img src="imgs/facebook-logo-button-white.png">
+      </a>
+    </div>
   </div>
 
-  <div>
-    <img src="imgs/code.png">
-    <span>Front-End</span>
-    <img src="imgs/responsive-design-symbol.png">
-    <span>Responsivo</span>
-    <img src="imgs/website-design-symbol.png">
-    <span>Layout</span>
-  </div>
+  <home></home>
+
+  <abilities></abilities>
 
   <!-- FOOTER -->
-
-  <!-- PAGE PORTFÓLIO -->
-
-
-  <!-- MAQUINA DE ESCREVER TEXTO -->
-  <div>
-	
-    <h1 class="typewrite-style"> 
-      <a href="" class="typewrite" data-period="2000" data-type='[ "Meu Portfólio ", "Meus Trabalhos", "I Love to Develop." ]'>
-        <span class="wrap"></span>
-      </a>
-    </h1>
-  
-  </div>
-
   <div class="footer">
     <p>Copyright © 2018. Feito com
       <img class="like-style" src="imgs/like.png"> por Mei N.S.</p>

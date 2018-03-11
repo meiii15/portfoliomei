@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/meiii15/portfoliomei#readme",
   "dependencies": {
+    "angular": "^1.6.9",
     "bootstrap": "^4.0.0"
   }
 }
