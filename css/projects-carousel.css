@@ -1,0 +1,27 @@
+.projects-carousel{
+    width:75%;
+    height: auto;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center
+}
+/*
+.projects-container{
+	display: inline-flex;
+    justify-content: center;
+    position:relative;
+}
+*/
+.projects-container{
+	width: 75%;
+    display: flex;    
+    justify-content: center;
+}
+
+.carousel-container{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+}
+

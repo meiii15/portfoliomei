@@ -23,13 +23,11 @@ a:hover {
 /*
  * Base structure
  */
-
-html,
 body {
   height: 100%;
   background: #00000080 url(../imgs/background2.jpg);
   background-size: cover;
-  
+  overflow-y: scroll;
 }
 
 
@@ -222,4 +220,8 @@ body {
 .wrap{
   border-right: 0.08em solid #fff;
   padding-left:10px;
+}
+
+section{
+  width:100%;
 }

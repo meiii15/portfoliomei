@@ -1,0 +1,15 @@
+ .project{
+    transform-style: preserve-3d; 
+    width: 500px;
+    height:auto;
+}
+/*
+
+.project img{
+    width: auto;
+    height: 200px;
+} */
+
+.carousel-item.project{
+    display: block;
+}

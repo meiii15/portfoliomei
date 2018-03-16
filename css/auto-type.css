@@ -1,0 +1,9 @@
+.typewrite-style {
+  color: #000;
+  display: inline-flex;
+  justify-content: space-between
+}
+
+.typewrite {
+  color: #000;
+}
