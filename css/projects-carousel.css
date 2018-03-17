@@ -3,7 +3,7 @@
     height: auto;
     perspective: 1000px;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 /*
 .projects-container{

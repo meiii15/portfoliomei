@@ -37,9 +37,11 @@ portfolio.controller('projectsCarouselController', ['$scope', function($scope){
             
             slides.push({ project: project,
                             slide: {
+                                xPos:  currentPos  * -75,
                                 zPos: Math.abs(parseInt(zPos * DISTANCE)),
                                 zIndex: Math.abs(currentPos) * -1
-                            } });
+                            } 
+                        });
         }
         
         $scope.slides = slides;

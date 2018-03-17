@@ -3,7 +3,8 @@
         <div id="carouselExampleControls" class="projects-carousel" data-ride="carousel">
             <div class="projects-container">
                 <div ng-repeat="(key, proj) in slides" class="project" 
-                    style="transform:   translateZ({{proj.slide.zPos}}px);
+                    style="transform:   translateZ({{proj.slide.zPos}}px)
+                                        translateX({{proj.slide.xPos}}px);
                                         z-index:{{proj.slide.zIndex}}">
                     <img class="d-block w-100" ng-src="{{proj.project.imageUrl}}">
                 </div>
