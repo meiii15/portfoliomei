@@ -5,13 +5,7 @@
     display: flex;
     justify-content: center;
 }
-/*
-.projects-container{
-	display: inline-flex;
-    justify-content: center;
-    position:relative;
-}
-*/
+
 .projects-container{
 	width: 75%;
     display: flex;    
