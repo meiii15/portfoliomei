@@ -5,47 +5,53 @@ portfolio.controller('projectsCarouselController', ['$scope', function($scope){
     
     };
 
-    $scope.next = function(){
-        var currentProject = $scope.projects[++this._currentProjectIndex];
-        this._selectProject(currentProject);
-        this._updateCarousel();
-    };
-    
     $scope.previous = function(){
-        var currentProject = $scope.projects[--this._currentProjectIndex];
-        this._selectProject(currentProject);
-        this._updateCarousel();
+        var projects = PROJECTS;
+        var lastProject = projects.pop();
+        projects.splice(0, 0, lastProject);
+        
+        $scope.slides = buildSlides(projects);
+    };
+
+    $scope.next = function(){
+        var projects = PROJECTS;
+        var firstProject = projects.splice(0, 1)[0];
+        projects.push(firstProject);
+
+        $scope.slides = buildSlides(projects);
     };
     
     this.$onInit = function()
     {
-        var slides = [];
+        $scope.slides = buildSlides(PROJECTS);
+    }
+    
+    function buildSlides(projects){
         
+        const HORIZONTAL_COMPANTION = -75;
         const DISTANCE = 500;
-        var selectedProjectIndex = parseInt(PROJECTS.length / 2);
-        var eachProjAngle = 360 / PROJECTS.length;
         
-        for(var projectIndex = 0; projectIndex < PROJECTS.length; projectIndex++){
+        var slides = [];
+        var selectedProjectIndex = parseInt(projects.length / 2);
+        var eachProjAngle = 360 / projects.length;
+        
+        for(var projectIndex = 0; projectIndex < projects.length; projectIndex++){
             var project = PROJECTS[projectIndex];
             project.isSelected = projectIndex === selectedProjectIndex;
             
             const currentPos = (projectIndex - selectedProjectIndex);
             var zPos = Math.cos(currentPos * eachProjAngle);
-            var xPos = Math.sin(currentPos * eachProjAngle);
 
-            console.log(selectedProjectIndex, projectIndex, currentPos, zPos );
-            
             slides.push({ project: project,
                             slide: {
-                                xPos:  currentPos  * -75,
+                                xPos:  currentPos  * HORIZONTAL_COMPANTION,
                                 zPos: Math.abs(parseInt(zPos * DISTANCE)),
                                 zIndex: Math.abs(currentPos) * -1
                             } 
                         });
         }
         
-        $scope.slides = slides;
-        
+        return slides;
     }
 }]);
 
