@@ -1,6 +1,10 @@
 <div class="project"
-    ng-style="{{translation}}">
-    <img src='{{imageUrl}}'/>
+        style="transform:   translateZ({{z}}px)
+                            translateX({{x}}px);
+                            z-index:{{zIndex}}">
+    <div>
+        <img src='{{imageUrl}}' class="d-block w-100"/>
+    </div>
     
     <div ng-if="isVisible">
         <h2>{{name}}</h2>

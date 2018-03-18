@@ -2,12 +2,22 @@
     <div class="carousel-container">
         <div id="carouselExampleControls" class="projects-carousel" data-ride="carousel">
             <div class="projects-container">
-                <div ng-repeat="(key, proj) in slides" class="project" 
-                    style="transform:   translateZ({{proj.slide.zPos}}px)
+                <!-- <div ng-repeat="(key, proj) in slides" class="project" 
+                    style="transform:translateZ({{proj.slide.zPos}}px)
                                         translateX({{proj.slide.xPos}}px);
                                         z-index:{{proj.slide.zIndex}}">
                     <img class="d-block w-100" ng-src="{{proj.project.imageUrl}}">
-                </div>
+                </div> -->
+
+                <project    ng-repeat="(key, slide) in slides"        
+                            name="{{slide.project.name}}"
+                            image-url="{{slide.project.imageUrl}}"
+                            description="{{slide.project.description}}"
+                            z="{{slide.slide.zPos}}"
+                            x="{{slide.slide.xPos}}"
+                            z-index="{{slide.slide.zIndex}}">
+                </project>
+
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" ng-click="previous()">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

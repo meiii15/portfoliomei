@@ -44,7 +44,7 @@ portfolio.controller('projectsCarouselController', ['$scope', function($scope){
 
             slides.push({ project: project,
                             slide: {
-                                xPos:  currentPos  * HORIZONTAL_COMPANTION,
+                                xPos: currentPos  * HORIZONTAL_COMPANTION,
                                 zPos: Math.abs(parseInt(zPos * DISTANCE)),
                                 zIndex: Math.abs(currentPos) * -1
                             } 
