@@ -49,56 +49,25 @@
   <script src="js/directives/projects-carousel-directive.js" type="text/javascript"></script>
   <script src="js/directives/project-directive.js" type="text/javascript"></script>
   <script src="js/directives/content-section-directive.js" type="text/javascript"></script>
+  <script src="js/directives/wrapper-directive.js" type="text/javascript"></script>
   
 </head>
 
 <body ng-app="portfolio">
 
-  <!-- MENU -->
-  <div id="mySidenav" class="sidenav">
-    <!-- <a href="javascript:void(0)" class="closebtn" onclick="sideNavBar.closeNav()">&times;</a> -->
-    <div class="align-txt-menu">
-      <a href="#">Home</a>
-      <a href="#">Portfólio</a>
-      <a href="#">Habilidades</a>
-      <a href="#">Fale comigo</a>
-      <a href="#">Currículo</a>
-    </div>
-
-    <!-- LOGO-ICONES -->
-    <div class="button-logo">
-      <a href="#">
-        <img src="imgs/linkedin-logo-white.png">
-      </a>
-      <a href="#">
-        <img src="imgs/whatsapp-white.png">
-      </a>
-      <a href="#">
-        <img src="imgs/github-logo-white.png">
-      </a>
-      <a href="#">
-        <img src="imgs/facebook-logo-button-white.png">
-      </a>
-    </div>
-  </div>
-
-  <content-section>
-    <home></home>
-  </content-section>
-
-  <content-section>
-    <abilities></abilities>
-  </content-section>
-
-  <content-section>
-    <projects-carousel></projects-carousel>
-  </content-section>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    <p>Copyright © 2018. Feito com
-      <img class="like-style" src="imgs/like.png"> por Mei N.S.</p>
-  </div>
+  <wrapper>
+      <content-section>
+          <home></home>
+      </content-section>
+      
+      <content-section>
+          <abilities></abilities>
+      </content-section>
+      
+      <content-section>
+          <projects-carousel></projects-carousel>
+      </content-section>
+  </wrapper>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
